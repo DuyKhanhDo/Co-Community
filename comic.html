@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanga</title>
+    <Link rel="stylesheet" href="Style/comic.css"></Link>
+
+</head>
+<body>
+    <header class="header">
+        <div class="nav-links">
+            <a href="#">DISCORD</a>
+            <a href="#">HỘI KÍN</a>
+            <a href="#">ĐĂNG TRUYỆN</a>
+            <a href="#">TIN TỨC</a>
+        </div>
+
+        <div class="logo">
+          <a href="comic.html" class="logo-link">Comanga</a>
+        </div>
+
+        <div class="user-actions">
+            <button id="search-btn">🔍</button>
+            <button id="notifications-btn">🔔</button>
+            <a href="welcome.html" class="login-btn">Đăng nhập</a>
+        </div>
+    </header>
+
+    <section class="featured-section" id="featured-section">
+        <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item" data-bg-color="#2d3748" data-primary-color="#4a5568" data-button-color="#63b3ed">
+                    <a href="comic_page.html">
+                        <img src="/api/placeholder/1200/500" class="carousel-image" alt="Manga 1" id="manga1">
+                    </a>
+                    <div class="carousel-content">
+                        <h2 class="carousel-title"><a href="comic_page.html">Lá thư tình và nữ diễn viên 13 tuổi</a></h2>
+                        <p class="carousel-description">Isshiki Fumi là nhân viên kế toán của một công ty giải trí. Một ngày nọ, anh được thuyên chuyển sang phòng kinh doanh - bộ phận quản lý các tài năng. Đối tượng quản lý của anh là một...</p>
+                        <a href="comic_page.html" class="view-button">XEM THÔNG TIN</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bg-color="#7b341e" data-primary-color="#9c4221" data-button-color="#ed8936">
+                    <a href="comic_page.html">
+                        <img src="/api/placeholder/1200/500" class="carousel-image" alt="Manga 2" id="manga2">
+                    </a>
+                    <div class="carousel-content">
+                        <h2 class="carousel-title"><a href="comic_page.html">Gachiakuta</a></h2>
+                        <p class="carousel-description">Combo mồ côi + đẩy cửa đẩy xã hội + bị phản bội và vụ oan. Nói chung là truyện "tác".</p>
+                        <a href="comic_page.html" class="view-button">XEM THÔNG TIN</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bg-color="#2a4365" data-primary-color="#2c5282" data-button-color="#4299e1">
+                    <a href="comic_page.html">
+                        <img src="/api/placeholder/1200/500" class="carousel-image" alt="Manga 3" id="manga3">
+                    </a>
+                    <div class="carousel-content">
+                        <h2 class="carousel-title"><a href="comic_page.html">One Piece</a></h2>
+                        <p class="carousel-description">Cuộc hành trình tìm kiếm kho báu của Luffy và băng hải tặc Mũ Rơm trên Đại Hải Trình.</p>
+                        <a href="comic_page.html" class="view-button">XEM THÔNG TIN</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bg-color="#1a202c" data-primary-color="#2d3748" data-button-color="#9f7aea">
+                    <a href="comic_page.html">
+                        <img src="/api/placeholder/1200/500" class="carousel-image" alt="Manga 4" id="manga4">
+                    </a>
+                    <div class="carousel-content">
+                        <h2 class="carousel-title"><a href="comic_page.html">Attack on Titan</a></h2>
+                        <p class="carousel-description">Nhân loại đối mặt với mối đe dọa từ những người khổng lồ ăn thịt người.</p>
+                        <a href="comic_page.html" class="view-button">XEM THÔNG TIN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav carousel-prev">&#10094;</div>
+            <div class="carousel-nav carousel-next">&#10095;</div>
+        </div>
+        <div class="carousel-dots" id="carousel-dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+        </div>
+    </section>
+
+    <section class="content-section">
+      <div class="content-wrapper">
+          <h2 class="section-title">Truyện Mới Cập Nhật</h2>
+          <div class="manga-grid">
+              <!-- Cập nhật theo danh sách từ file ảnh -->  
+              <div class="manga-card">
+                  <a href="comic_page.html">
+                      <img src="https://via.placeholder.com/200x280" alt="Salamoto Day">
+                  </a>
+                  <div class="manga-info">
+                      <a href="comic_page.html" class="manga-title">Salamoto Day (FULL HD)</a>
+                      <div class="chapter-info">
+                          <a href="chapter_view.html" class="chapter-number">C. 203</a>
+                          <span class="update-time">2 giờ trước</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="manga-card">
+                  <a href="comic_page.html">
+                      <img src="https://via.placeholder.com/200x280" alt="Hand Jumper">
+                  </a>
+                  <div class="manga-info">
+                      <a href="comic_page.html" class="manga-title">Hand Jumper</a>
+                      <div class="chapter-info">
+                          <a href="chapter_view.html" class="chapter-number">C. 47</a>
+                          <span class="update-time">4 giờ trước</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="manga-card">
+                  <a href="comic_page.html">
+                      <img src="https://via.placeholder.com/200x280" alt="Hirayasumi">
+                  </a>
+                  <div class="manga-info">
+                      <a href="comic_page.html" class="manga-title">Hirayasumi</a>
+                      <div class="chapter-info">
+                          <a href="chapter_view.html" class="chapter-number">C. 74</a>
+                          <span class="update-time">4 giờ trước</span>
+                      </div>
+                  </div>
+              </div>
+
+    <script>
+        // Replace placeholder images with actual manga covers
+        document.getElementById('manga1').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhB9WE7-6OgQSZZ0SBgnbKuJnfDtXeONY17Q&usqp=CAU";
+        document.getElementById('manga2').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4XYacHkiZJbJ48yqG7N2cqJEpkSxG771nfw&usqp=CAU";
+        document.getElementById('manga3').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUgL-7EESp2ZQ_i2K7l5gOj0J6TBJGiZ1-rg&usqp=CAU";
+        document.getElementById('manga4').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY9ZgQ4teQmWR_vhExjHnz7qnfYnP-_MlvVQ&usqp=CAU";
+        
+        document.getElementById('recent1').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgGNNs6CM-Jb70mBZGbxEbW_KfuKJwYN0mQ&usqp=CAU";
+        document.getElementById('recent2').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoMqRZjS4qRAkqK1NUY72Dx_V_cFplMtqU3Q&usqp=CAU";
+        document.getElementById('recent3').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGqXC52a9lz11Ht0bxgZSWKqkIQVZUbKfDWA&usqp=CAU";
+        document.getElementById('recent4').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZGp-kr-d5N1vUwUFQpTB3h9W5Y8ZMvCE-eg&usqp=CAU";
+        document.getElementById('recent5').src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_dhGbLnPDjXZBSN-KwTFIAu_5lhY_HsVb0w&usqp=CAU";
+
+        // Function to update theme from carousel item
+        function updateThemeFromItem(item) {
+            const bgColor = item.dataset.bgColor || '#333';
+            const primaryColor = item.dataset.primaryColor || '#444';
+            const buttonColor = item.dataset.buttonColor || '#4a76a8';
+            
+            document.documentElement.style.setProperty('--carousel-bg-color', bgColor);
+            document.documentElement.style.setProperty('--primary-color', primaryColor);
+            document.documentElement.style.setProperty('--button-color', buttonColor);
+            document.documentElement.style.setProperty('--highlight-color', buttonColor);
+        }
+    </script>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>

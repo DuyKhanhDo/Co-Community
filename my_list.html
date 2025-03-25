@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách của tôi - Comovie</title>
+    <link rel="stylesheet" href="Style/my_list.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-left">
+        <a href="movie.html" class="logo-link">Comovie</a>
+        <nav class="nav-left">
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Thể loại</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?genre=action">Hành động</a>
+                <a href="movie_list.html?genre=comedy">Hài hước</a>
+                <a href="movie_list.html?genre=drama">Tâm lý</a>
+                <a href="movie_list.html?genre=romance">Lãng mạn</a>
+                <a href="movie_list.html?genre=horror">Kinh dị</a>
+                <a href="movie_list.html?genre=sci-fi">Khoa học viễn tưởng</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Quốc gia</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?country=us">Mỹ</a>
+                <a href="movie_list.html?country=kr">Hàn Quốc</a>
+                <a href="movie_list.html?country=jp">Nhật Bản</a>
+                <a href="movie_list.html?country=cn">Trung Quốc</a>
+                <a href="movie_list.html?country=vn">Việt Nam</a>
+                <a href="movie_list.html?country=other">Khác</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Loại phim</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?type=movie">Phim lẻ</a>
+                <a href="movie_list.html?type=series">Phim bộ</a>
+                <a href="movie_list.html?type=anime">Anime</a>
+                <a href="movie_list.html?type=documentary">Tài liệu</a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="my_list.html" class="nav-link active">Danh sách của tôi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header-right">
+        <div class="search-bar">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <button type="button">🔍</button>
+        </div>
+        <div class="auth-links">
+          <a href="login.html">Đăng nhập</a>
+          <a href="register.html">Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <div class="page-header">
+        <h1 class="page-title">Danh sách của tôi</h1>
+      </div>
+
+      <!-- Tabs Navigation -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="watch-later">Xem sau</button>
+        <button class="tab-btn" data-tab="watching">Đang xem</button>
+        <button class="tab-btn" data-tab="following">Đang theo dõi</button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+        <!-- Watch Later Tab -->
+        <div class="tab-pane active" id="watch-later">
+          <div class="movie-list">
+            <!-- Movie Item 1 -->
+            <div class="movie-item">
+              <div class="movie-poster">
+                <img src="Images/movie1.jpg" alt="Movie 1" />
+                <div class="movie-rating">9.2</div>
+              </div>
+              <div class="movie-actions">
+                <button class="action-btn icon-play"></button>
+                <button class="action-btn icon-plus"></button>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Avengers: Endgame</h3>
+                <div class="movie-meta">
+                  <span>2019</span>
+                  <span>181 phút</span>
+                </div>
+                <div class="movie-genres">
+                  <span class="genre-tag">Hành động</span>
+                  <span class="genre-tag">Phiêu lưu</span>
+                  <span class="genre-tag">Khoa học viễn tưởng</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="movie-link"></a>
+            </div>
+
+            <!-- Movie Item 2 -->
+            <div class="movie-item">
+              <div class="movie-poster">
+                <img src="Images/movie2.jpg" alt="Movie 2" />
+                <div class="movie-rating">8.9</div>
+              </div>
+              <div class="movie-actions">
+                <button class="action-btn icon-play"></button>
+                <button class="action-btn icon-plus"></button>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Inception</h3>
+                <div class="movie-meta">
+                  <span>2010</span>
+                  <span>148 phút</span>
+                </div>
+                <div class="movie-genres">
+                  <span class="genre-tag">Hành động</span>
+                  <span class="genre-tag">Khoa học viễn tưởng</span>
+                  <span class="genre-tag">Tâm lý</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="movie-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Watching Tab -->
+        <div class="tab-pane" id="watching">
+          <div class="movie-list">
+            <!-- Movie Item 3 -->
+            <div class="movie-item">
+              <div class="movie-poster">
+                <img src="Images/movie3.jpg" alt="Movie 3" />
+                <div class="movie-rating">8.7</div>
+                <div class="progress-indicator">Đang xem: 45%</div>
+              </div>
+              <div class="movie-actions">
+                <button class="action-btn icon-play"></button>
+                <button class="action-btn icon-plus"></button>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Dark Knight</h3>
+                <div class="movie-meta">
+                  <span>2008</span>
+                  <span>152 phút</span>
+                </div>
+                <div class="movie-genres">
+                  <span class="genre-tag">Hành động</span>
+                  <span class="genre-tag">Tội phạm</span>
+                  <span class="genre-tag">Tâm lý</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="movie-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Following Tab -->
+        <div class="tab-pane" id="following">
+          <div class="movie-list">
+            <!-- Movie Item 4 -->
+            <div class="movie-item">
+              <div class="movie-poster">
+                <img src="Images/movie4.jpg" alt="Movie 4" />
+                <div class="movie-rating">8.5</div>
+                <div class="following-status">Đang theo dõi</div>
+              </div>
+              <div class="movie-actions">
+                <button class="action-btn icon-play"></button>
+                <button class="action-btn icon-plus"></button>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Interstellar</h3>
+                <div class="movie-meta">
+                  <span>2014</span>
+                  <span>169 phút</span>
+                </div>
+                <div class="movie-genres">
+                  <span class="genre-tag">Khoa học viễn tưởng</span>
+                  <span class="genre-tag">Phiêu lưu</span>
+                  <span class="genre-tag">Tâm lý</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="movie-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Comovie. All rights reserved.</p>
+    </footer>
+
+    <script src="Scripts/my_list.js"></script>
+  </body>
+</html>

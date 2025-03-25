@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Danh sách phim trên Comovie" />
+    <title>Danh sách phim | Comovie</title>
+    <link rel="stylesheet" href="Style/movie_list.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">
+        <h1 class="site-title">
+          <a href="movie.html" class="logo-link">Comovie</a>
+        </h1>
+
+        <div class="nav-left">
+          <div class="dropdown">
+            <a href="" class="dropbtn active">Thể loại</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?genre=action">Hành động</a>
+                <a href="movie_list.html?genre=comedy">Hài hước</a>
+                <a href="movie_list.html?genre=drama">Chính kịch</a>
+                <a href="movie_list.html?genre=horror">Kinh dị</a>
+                <a href="movie_list.html?genre=romance">Lãng mạn</a>
+                <a href="movie_list.html?genre=sci-fi">Khoa học viễn tưởng</a>
+                <a href="movie_list.html?genre=fantasy">Kỳ ảo</a>
+                <a href="movie_list.html?genre=animation">Hoạt hình</a>
+                <a href="movie_list.html?genre=crime">Tội phạm</a>
+                <a href="movie_list.html?genre=documentary">Tài liệu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="movie_list.html?country=all" class="dropbtn">Quốc gia</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?country=us">Mỹ</a>
+                <a href="movie_list.html?country=kr">Hàn Quốc</a>
+                <a href="movie_list.html?country=cn">Trung Quốc</a>
+                <a href="movie_list.html?country=jp">Nhật Bản</a>
+                <a href="movie_list.html?country=vn">Việt Nam</a>
+                <a href="movie_list.html?country=th">Thái Lan</a>
+                <a href="movie_list.html?country=in">Ấn Độ</a>
+                <a href="movie_list.html?country=fr">Pháp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="movie_list.html?type=hot" class="dropbtn">Phổ biến</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?type=trending">Xu hướng</a>
+                <a href="movie_list.html?type=toprated">Đánh giá cao</a>
+                <a href="movie_list.html?type=newest">Mới nhất</a>
+                <a href="movie_list.html?type=upcoming">Sắp chiếu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="my_list.html" class="dropbtn">Cá nhân</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="my_list.html?section=favorites">Yêu thích</a>
+                <a href="my_list.html?section=watchlist">Xem sau</a>
+                <a href="my_list.html?section=history">Lịch sử xem</a>
+                <a href="my_list.html?section=subscriptions">Đã đăng ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <form class="search-bar">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <button type="submit">Tìm</button>
+        </form>
+
+        <div class="auth-links">
+          <a href="login.html">Đăng nhập</a>
+          <a href="register.html">Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+      <div class="page-header">
+        <h1 class="page-title">Danh sách phim</h1>
+        <div class="page-filters">
+          <select class="filter-select">
+            <option value="popular">Phổ biến</option>
+            <option value="newest">Mới nhất</option>
+            <option value="rating">Đánh giá cao nhất</option>
+            <option value="watched">Xem nhiều nhất</option>
+          </select>
+
+          <select class="filter-select">
+            <option value="all">Tất cả thể loại</option>
+            <option value="action">Hành động</option>
+            <option value="comedy">Hài hước</option>
+            <option value="drama">Chính kịch</option>
+            <option value="horror">Kinh dị</option>
+          </select>
+
+          <select class="filter-select">
+            <option value="all">Tất cả quốc gia</option>
+            <option value="us">Mỹ</option>
+            <option value="kr">Hàn Quốc</option>
+            <option value="jp">Nhật Bản</option>
+            <option value="cn">Trung Quốc</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Movie List -->
+      <div class="movie-list">
+        <!-- Movie Item 1 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img
+              src="https://via.placeholder.com/220x330"
+              alt="Avengers: Endgame"
+            />
+            <div class="movie-rating">9.2</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Avengers: Endgame</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2019</span>
+              <span class="movie-duration">181 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Hành động</span>
+              <span class="genre-tag">Phiêu lưu</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+
+        <!-- Movie Item 2 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img
+              src="https://via.placeholder.com/220x330"
+              alt="Spider-Man: No Way Home"
+            />
+            <div class="movie-rating">8.9</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Spider-Man: No Way Home</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2021</span>
+              <span class="movie-duration">148 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Hành động</span>
+              <span class="genre-tag">Phiêu lưu</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+
+        <!-- Movie Item 3 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img src="https://via.placeholder.com/220x330" alt="Parasite" />
+            <div class="movie-rating">8.6</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Parasite</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2019</span>
+              <span class="movie-duration">132 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Chính kịch</span>
+              <span class="genre-tag">Hài đen</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+
+        <!-- Movie Item 4 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img src="https://via.placeholder.com/220x330" alt="Joker" />
+            <div class="movie-rating">8.4</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Joker</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2019</span>
+              <span class="movie-duration">122 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Tội phạm</span>
+              <span class="genre-tag">Chính kịch</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+
+        <!-- Movie Item 5 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img src="https://via.placeholder.com/220x330" alt="Inception" />
+            <div class="movie-rating">8.8</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Inception</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2010</span>
+              <span class="movie-duration">148 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Khoa học viễn tưởng</span>
+              <span class="genre-tag">Hành động</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+
+        <!-- Movie Item 6 -->
+        <div class="movie-item">
+          <div class="movie-poster">
+            <img
+              src="https://via.placeholder.com/220x330"
+              alt="The Dark Knight"
+            />
+            <div class="movie-rating">9.0</div>
+            <div class="movie-actions">
+              <button class="action-btn"><i class="icon-play"></i></button>
+              <button class="action-btn"><i class="icon-plus"></i></button>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">The Dark Knight</h3>
+            <div class="movie-meta">
+              <span class="movie-year">2008</span>
+              <span class="movie-duration">152 phút</span>
+            </div>
+            <div class="movie-genres">
+              <span class="genre-tag">Hành động</span>
+              <span class="genre-tag">Tội phạm</span>
+            </div>
+          </div>
+          <a href="movie_page.html" class="movie-link"></a>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link">5</a>
+        <span class="page-dots">...</span>
+        <a href="#" class="page-link">42</a>
+        <a href="#" class="page-next"
+          >Trang tiếp <i class="icon-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Comovie. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="Scripts/movie_list.js"></script>
+  </body>
+</html>

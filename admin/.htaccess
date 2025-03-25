@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /DP/admin/
+
+# Nếu file hoặc thư mục không tồn tại, chuyển đến index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Ngăn truy cập vào một số thư mục bảo mật
+RewriteRule ^config/(.*)$ index.php?url=errors/forbidden [QSA,L]
+RewriteRule ^includes/(.*)$ index.php?url=errors/forbidden [QSA,L]
+RewriteRule ^models/(.*)$ index.php?url=errors/forbidden [QSA,L]
+RewriteRule ^controllers/(.*)$ index.php?url=errors/forbidden [QSA,L]
+RewriteRule ^views/(.*)$ index.php?url=errors/forbidden [QSA,L] 

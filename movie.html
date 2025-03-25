@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comovie - Thưởng thức phim theo phong cách của bạn"
+    />
+    <title>Phim | Comovie</title>
+    <link rel="stylesheet" href="Style/movie.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">
+        <h1 class="site-title">
+          <a href="movie.html" class="logo-link">Comovie</a>
+        </h1>
+
+        <div class="nav-left">
+          <div class="dropdown">
+            <a href="" class="dropbtn active">Thể loại</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?genre=action">Hành động</a>
+                <a href="movie_list.html?genre=comedy">Hài hước</a>
+                <a href="movie_list.html?genre=drama">Chính kịch</a>
+                <a href="movie_list.html?genre=horror">Kinh dị</a>
+                <a href="movie_list.html?genre=romance">Lãng mạn</a>
+                <a href="movie_list.html?genre=sci-fi">Khoa học viễn tưởng</a>
+                <a href="movie_list.html?genre=fantasy">Kỳ ảo</a>
+                <a href="movie_list.html?genre=animation">Hoạt hình</a>
+                <a href="movie_list.html?genre=crime">Tội phạm</a>
+                <a href="movie_list.html?genre=documentary">Tài liệu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="movie_list.html?country=all" class="dropbtn">Quốc gia</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?country=us">Mỹ</a>
+                <a href="movie_list.html?country=kr">Hàn Quốc</a>
+                <a href="movie_list.html?country=cn">Trung Quốc</a>
+                <a href="movie_list.html?country=jp">Nhật Bản</a>
+                <a href="movie_list.html?country=vn">Việt Nam</a>
+                <a href="movie_list.html?country=th">Thái Lan</a>
+                <a href="movie_list.html?country=in">Ấn Độ</a>
+                <a href="movie_list.html?country=fr">Pháp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="movie_list.html?type=hot" class="dropbtn">Phổ biến</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="movie_list.html?type=trending">Xu hướng</a>
+                <a href="movie_list.html?type=toprated">Đánh giá cao</a>
+                <a href="movie_list.html?type=newest">Mới nhất</a>
+                <a href="movie_list.html?type=upcoming">Sắp chiếu</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="my_list.html" class="dropbtn">Cá nhân</a>
+            <div class="dropdown-content">
+              <div class="dropdown-grid">
+                <a href="my_list.html?section=favorites">Yêu thích</a>
+                <a href="my_list.html?section=watchlist">Xem sau</a>
+                <a href="my_list.html?section=history">Lịch sử xem</a>
+                <a href="my_list.html?section=subscriptions">Đã đăng ký</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-right">
+        <form class="search-bar">
+          <input type="text" placeholder="Tìm kiếm..." />
+          <button type="submit">Tìm</button>
+        </form>
+
+        <div class="auth-links">
+          <a href="login.html">Đăng nhập</a>
+          <a href="register.html">Đăng ký</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Container cho nội dung chính -->
+    <div class="main-container">
+      <!-- Movies Main Content -->
+      <div class="container">
+        <div class="section" id="featured-movies">
+          <h2>Phim Nổi Bật</h2>
+
+          <div class="movies-horizon">
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Avengers: Endgame"
+                />
+                <div class="movie-rating">9.2</div>
+                <div class="movie-category">Hành động</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Avengers: Endgame</h3>
+                <div class="movie-details">
+                  <span class="release-year">2019</span>
+                  <span class="duration">181 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Spider-Man: No Way Home"
+                />
+                <div class="movie-rating">8.7</div>
+                <div class="movie-category">Siêu anh hùng</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Spider-Man: No Way Home</h3>
+                <div class="movie-details">
+                  <span class="release-year">2021</span>
+                  <span class="duration">148 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img src="https://via.placeholder.com/300x450" alt="Dune" />
+                <div class="movie-rating">8.5</div>
+                <div class="movie-category">Khoa học viễn tưởng</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Dune</h3>
+                <div class="movie-details">
+                  <span class="release-year">2021</span>
+                  <span class="duration">155 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="The Batman"
+                />
+                <div class="movie-rating">8.3</div>
+                <div class="movie-category">Tội phạm</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Batman</h3>
+                <div class="movie-details">
+                  <span class="release-year">2022</span>
+                  <span class="duration">176 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Oppenheimer"
+                />
+                <div class="movie-rating">8.9</div>
+                <div class="movie-category">Lịch sử</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Oppenheimer</h3>
+                <div class="movie-details">
+                  <span class="release-year">2023</span>
+                  <span class="duration">180 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="recent-movies">
+          <h2>Phim Mới Cập Nhật</h2>
+          <div class="movies-horizon">
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img src="https://via.placeholder.com/300x450" alt="Wonka" />
+                <div class="movie-rating">7.8</div>
+                <div class="movie-category">Phiêu lưu</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Wonka</h3>
+                <div class="movie-details">
+                  <span class="release-year">2023</span>
+                  <span class="duration">116 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Aquaman 2"
+                />
+                <div class="movie-rating">6.5</div>
+                <div class="movie-category">Phiêu lưu</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Aquaman and the Lost Kingdom</h3>
+                <div class="movie-details">
+                  <span class="release-year">2023</span>
+                  <span class="duration">124 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Rebel Moon"
+                />
+                <div class="movie-rating">5.9</div>
+                <div class="movie-category">Khoa học viễn tưởng</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Rebel Moon</h3>
+                <div class="movie-details">
+                  <span class="release-year">2023</span>
+                  <span class="duration">133 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="The Color Purple"
+                />
+                <div class="movie-rating">7.0</div>
+                <div class="movie-category">Chính kịch</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Color Purple</h3>
+                <div class="movie-details">
+                  <span class="release-year">2023</span>
+                  <span class="duration">140 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Night Swim"
+                />
+                <div class="movie-rating">5.5</div>
+                <div class="movie-category">Kinh dị</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Night Swim</h3>
+                <div class="movie-details">
+                  <span class="release-year">2024</span>
+                  <span class="duration">98 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="popular-movies">
+          <h2>Phim Phổ Biến</h2>
+          <div class="movies-horizon">
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="The Shawshank Redemption"
+                />
+                <div class="movie-rating">9.3</div>
+                <div class="movie-category">Chính kịch</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Shawshank Redemption</h3>
+                <div class="movie-details">
+                  <span class="release-year">1994</span>
+                  <span class="duration">142 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="The Godfather"
+                />
+                <div class="movie-rating">9.2</div>
+                <div class="movie-category">Tội phạm</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Godfather</h3>
+                <div class="movie-details">
+                  <span class="release-year">1972</span>
+                  <span class="duration">175 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Pulp Fiction"
+                />
+                <div class="movie-rating">8.9</div>
+                <div class="movie-category">Tội phạm</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Pulp Fiction</h3>
+                <div class="movie-details">
+                  <span class="release-year">1994</span>
+                  <span class="duration">154 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="Forrest Gump"
+                />
+                <div class="movie-rating">8.8</div>
+                <div class="movie-category">Chính kịch</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">Forrest Gump</h3>
+                <div class="movie-details">
+                  <span class="release-year">1994</span>
+                  <span class="duration">142 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+
+            <div class="movie-card">
+              <div class="movie-poster">
+                <img
+                  src="https://via.placeholder.com/300x450"
+                  alt="The Matrix"
+                />
+                <div class="movie-rating">8.7</div>
+                <div class="movie-category">Khoa học viễn tưởng</div>
+              </div>
+              <div class="movie-info">
+                <h3 class="movie-title">The Matrix</h3>
+                <div class="movie-details">
+                  <span class="release-year">1999</span>
+                  <span class="duration">136 phút</span>
+                </div>
+              </div>
+              <a href="movie_page.html" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="right-column">
+        <!-- Trending Movies -->
+        <aside class="trending-nav">
+          <h3>Phim Thịnh Hành</h3>
+          <div class="trending-list">
+            <div class="trending-item">
+              <img
+                src="https://via.placeholder.com/100x150"
+                alt="Avengers: Endgame"
+              />
+              <div>
+                <p><strong>Avengers: Endgame</strong></p>
+                <p>9.2 ★ | 2019</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <img
+                src="https://via.placeholder.com/100x150"
+                alt="Oppenheimer"
+              />
+              <div>
+                <p><strong>Oppenheimer</strong></p>
+                <p>8.9 ★ | 2023</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <img
+                src="https://via.placeholder.com/100x150"
+                alt="Spider-Man: No Way Home"
+              />
+              <div>
+                <p><strong>Spider-Man: No Way Home</strong></p>
+                <p>8.7 ★ | 2021</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <img src="https://via.placeholder.com/100x150" alt="Dune" />
+              <div>
+                <p><strong>Dune</strong></p>
+                <p>8.5 ★ | 2021</p>
+              </div>
+            </div>
+
+            <div class="trending-item">
+              <img src="https://via.placeholder.com/100x150" alt="The Batman" />
+              <div>
+                <p><strong>The Batman</strong></p>
+                <p>8.3 ★ | 2022</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Danh sách xem -->
+        <aside class="user-nav">
+          <h3>Danh Sách Của Bạn</h3>
+          <div class="user-list">
+            <div class="user-item">
+              <img
+                src="https://via.placeholder.com/100x150"
+                alt="Đã xem gần đây"
+              />
+              <div>
+                <p><strong>Tiếp tục xem</strong></p>
+                <p>Oppenheimer</p>
+              </div>
+            </div>
+
+            <div class="user-item">
+              <img src="https://via.placeholder.com/100x150" alt="Đã lưu" />
+              <div>
+                <p><strong>Đã lưu</strong></p>
+                <p>The Batman</p>
+              </div>
+            </div>
+
+            <div class="user-item">
+              <img src="https://via.placeholder.com/100x150" alt="Đã thích" />
+              <div>
+                <p><strong>Đã thích</strong></p>
+                <p>Dune</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Comovie. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+
+    <script src="Scripts/movie.js"></script>
+  </body>
+</html>

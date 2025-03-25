@@ -1,0 +1,30 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+/logs/
+
+# Cache
+/cache/
+*.cache
+
+# Uploaded files
+/uploads/
+/media/
+
+# System files
+.DS_Store
+Thumbs.db 
